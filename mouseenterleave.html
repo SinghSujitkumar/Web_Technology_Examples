@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://code.jquery.com/jquery-git.js"></script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<title>Change the font weight and color of paragraphs on mouseenter and mouseleave.</title>
+</head>
+<body>
+<p>Move the mouse over this and next pragraphs.</p>
+<p>Web development tutorials</p>
+<script>
+$( "p" )
+.on( "mouseenter", function() {
+$( this ).css({
+"background-color": "red",
+"font-weight": "bolder"
+});
+})
+.on( "mouseleave", function() {
+var styles = {
+backgroundColor : "#ded",
+fontWeight: ""
+};
+$( this ).css( styles );
+});</script>
+</body>
+</html>

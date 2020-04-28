@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <form action="getElementById">
+        <fieldset>
+      <input id="lowerCase" type="radio" name="case" value="lowerCase">Lower Case<br>
+      <input id ="upperCase" type="radio" name="case" value="upperCase">Upper Case<br><br>
+          </fieldset>
+        <fieldset>
+      <textarea id="inputText" name="input" form="inputText"></textarea>
+          </fieldset><br>
+        <fieldset>
+      <textarea id ="outputText" name="output" form="outputText" disabled></textarea>
+          </fieldset>
+        <input type="button" value="Convert" onclick="convert()">
+      </form>
+      <script>
+      window.load =convert;
+function convert(){
+ var output;
+  var convertedText = document.getElementById('inputText').value;
+    
+    if(document.getElementById("lowerCase").checked == true){
+      output = convertedText.toLowerCase();
+       }
+       else {
+       output = convertedText.toUpperCase();
+       }
+    document.getElementById('outputText').value = output;
+}
+
+      </script>
+</body>
+</html>

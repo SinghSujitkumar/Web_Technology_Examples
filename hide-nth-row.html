@@ -1,0 +1,42 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Hide odd rows</title>
+        <meta charset="UTF-8">
+    </head>
+    <style>
+        table.odd-rows-hidden tr:nth-child(odd) {
+        display: none;
+}
+    </style>
+    <body>
+        <div style="background-color:#8F9779;width:200px;height:30px;">
+        </div>
+        <hr style="width:200px" align="left">
+        <table border="1" >
+            <tr>
+                <td width="40" height="20">row 1</td>
+            </tr>
+            <tr>
+                <td width="40" height="20">row 2</td>
+            </tr>
+            <tr>
+                <td width="40" height="20">row 3</td>
+            </tr>
+            <tr>
+                <td width="40" height="20">row 4</td>
+            </tr>
+            <tr>
+                <td width="40" height="20">row 5</td>
+            </tr>
+        </table><br>
+        <button type="button" id="HideRows">Hide Odd Rows</button>
+        <script >
+        /* hideOddRows.js */
+    document.getElementById('HideRows').onclick = function hideRows() {
+    document.getElementsByTagName('table').item(0).className = 'odd-rows-hidden';
+}
+        </script>
+    </body>
+</html>

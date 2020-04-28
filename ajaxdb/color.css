@@ -1,0 +1,10 @@
+book{ 
+    color:#AAB7B8; 
+    background-color : #212F3C; 
+    width: 100%;
+    font-size : 40px; 
+    display:block;
+  } 
+name, author, country, yearpublished { 
+    display : block; 
+} 

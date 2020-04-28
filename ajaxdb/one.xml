@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<?xml-stylesheet type="text/css" href="color.css" ?> 
+<books>
+<book id='1'>
+<name>Applied Mathematics III</name>
+<author>Prof G.V Khumbojkar</author>
+<yearpublished>1995</yearpublished>
+<sem>Semester 3</sem>
+</book>
+<book id='2'>
+<name>Data Structures</name>
+<author>Reema Thareja</author>
+<yearpublished>1908</yearpublished>
+<sem>Semester 3</sem>
+</book>
+<book id='3'>
+<name>Applied Mathematics IV</name>
+<author>Prof G.V Khumbojkart</author>
+<yearpublished>2000</yearpublished>
+<sem>Semester 4</sem>
+</book>
+</books>

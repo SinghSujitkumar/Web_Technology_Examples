@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset=utf-8 />
+<title>Insert dashes (-) between even numbers</title>
+</head>
+<body>
+    <input type="number" id="myText">
+    <P id ='demo'></P>
+    <button onclick="myFunction()">Try it</button>
+<script>
+    function myFunction() {
+
+const str = document.getElementById("myText").value;
+const result = [str[0]];
+  
+for(let x=1; x<str.length; x++)
+  {
+    if((str[x-1]%2 === 0)&&(str[x]%2 === 0))
+     {
+      result.push('-', str[x]);
+     }
+    else
+     {
+      result.push(str[x]);
+     }
+  }
+document.getElementById('demo').innerHTML= result.join('');}
+    </script>
+</body>
+</html>

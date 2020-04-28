@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script></head>
+<body>
+        <script>
+
+                $(document).ready(function()
+                { 
+                  var text = ["Good Morning","Good Day"];
+                  var x = Math.floor((Math.random()*2));
+                  $('#myTxt').html(text[x]);
+                
+                });
+                
+                </script>
+                <form>
+                <div style="border: 1px red solid; height:100px; width:200px;">
+                   <span id="myTxt"></span>
+                </div>
+                </form>
+</body>
+
+</html>

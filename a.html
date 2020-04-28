@@ -1,0 +1,34 @@
+<html>
+<head>
+<title>How to enable or disable textfield using jQuery</title>
+</head>
+
+<body>
+
+<h2>Enabling and Disabling text field using jQuery</h2>
+
+<form id="registration-form">
+Enter your name: <input type="text" id="name">
+</form>
+
+<button id="btn_disable" >Disable the input</button>
+<button id="btn_enable" >Enable the input</button>
+{% comment %}  {% endcomment %}
+
+<script src="http://code.jquery.com/jquery-1.6.2.min.js"></script>
+<script>
+$(document).ready(function() {
+
+$("#btn_enable").click(function(){
+$("#name").prop("disabled", false);
+});
+
+$("#btn_disable").click(function(){
+$("#name").prop("disabled", true);
+});
+
+});
+</script>
+
+</body>
+</html>

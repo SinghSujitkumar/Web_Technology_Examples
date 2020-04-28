@@ -1,0 +1,34 @@
+<!DOCTYPE html> 
+<html> 
+
+<head> 
+	<title> 
+	window open and close method 
+	</title> 
+	<script> 
+		var Window; 
+
+		// Function that open the new Window 
+		function windowOpen() { 
+			Window = window.open( 
+			"https://www.geeksforgeeks.org/", 
+				"_blank", "width=400, height=450"); 
+		} 
+
+		// function that Closes the open Window 
+		function windowClose() { 
+			Window.close(); 
+		} 
+	</script> 
+</head> 
+
+<body> 
+	<button onclick="windowOpen()"> 
+	Open GeeksforGeeks 
+	</button> 
+	<button onclick="windowClose()"> 
+	Close GeeksforGeeks 
+	</button> 
+</body> 
+
+</html> 
